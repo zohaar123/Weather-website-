@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Calculation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-600 p-5 text-white text-center shadow-md">
+    <h1 class="text-4xl font-bold">SkyWays Airlines</h1>
+    <nav class="mt-3">
+      <ul class="flex justify-center space-x-6">
+        <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="employee-list.html" class="hover:text-yellow-400">Employee List</a></li>
+        <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+        <li><a href="contact-us.html" class="hover:text-yellow-400">Contact</a></li>
+        <li><a href="payroll-history.html" class="hover:text-yellow-400">Payroll History</a></li>
+        <li><a href="salary-calculation.html" class="hover:text-yellow-400">Salary Calculation</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- Salary Calculation Form -->
+<main class="container mx-auto p-6">
+    <h2 class="text-3xl font-semibold text-center">Salary Calculation</h2>
+
+    <form id="salary-form" class="bg-white p-6 shadow-md rounded-lg">
+      <label for="baseSalary" class="block text-left text-lg font-medium">Base Salary</label>
+      <input type="number" id="baseSalary" class="w-full p-2 mt-2 border border-gray-300 rounded" placeholder="Enter base salary">
+
+      <label for="bonus" class="block text-left text-lg font-medium mt-4">Bonus</label>
+      <input type="number" id="bonus" class="w-full p-2 mt-2 border border-gray-300 rounded" placeholder="Enter bonus amount">
+
+      <label for="tax" class="block text-left text-lg font-medium mt-4">Tax Percentage</label>
+      <input type="number" id="tax" class="w-full p-2 mt-2 border border-gray-300 rounded" placeholder="Enter tax percentage">
+
+      <button type="submit" class="bg-blue-600 text-white p-3 rounded-lg mt-4 w-full">Calculate Salary</button>
+    </form>
+
+    <div id="result" class="mt-6 text-xl"></div>
+  </main>
+
+  <footer class="bg-blue-600 p-3 text-white text-center">
+    <p>&copy; 2025 SkyWays Airlines. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('salary-form').addEventListener('submit', function(e) {e.preventDefault();
+
+// Get input values
+const baseSalary = parseFloat(document.getElementById('baseSalary').value);
+const bonus = parseFloat(document.getElementById('bonus').value);
+const taxPercentage = parseFloat(document.getElementById('tax').value);
+
+// Calculate total salary
+const totalSalary = baseSalary + bonus;
+const taxAmount = (taxPercentage / 100) * totalSalary;
+const finalSalary = totalSalary - taxAmount;
+
+// Display result
+document.getElementById('result').textContent = `Total Salary: 
+totalSalary.toFixed(2) | Tax Amount:
+{taxAmount.toFixed(2)} | Final Salary after Tax: 
+
+{finalSalary.toFixed(2)}`;
+});
+</script>
+</body>
+</html>

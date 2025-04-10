@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll History</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl">Employee Management System</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-white">Home</a></li>
+                <li><a href="employee-list.html" class="text-white">Employee List</a></li>
+                <li><a href="salary-calculation.html" class="text-white">Salary Calculation</a></li>
+                <li><a href="payroll-history.html" class="text-white">Payroll History</a></li>
+                <li><a href="contact-us.html" class="text-white">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto mt-10 p-5">
+        <h1 class="text-3xl font-bold text-center text-gray-700 mb-5">Payroll History</h1>
+
+        <!-- Payroll History Table -->
+        <div class="overflow-x-auto bg-white shadow rounded-lg">
+            <table class="min-w-full table-auto">
+                <thead class="bg-blue-600 text-white">
+                    <tr>
+                        <th class="py-2 px-4 text-left">Employee ID</th>
+                        <th class="py-2 px-4 text-left">Employee Name</th>
+                        <th class="py-2 px-4 text-left">Month</th>
+                        <th class="py-2 px-4 text-left">Salary</th>
+                        <th class="py-2 px-4 text-left">Bonus</th>
+                        <th class="py-2 px-4 text-left">Total Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">001</td>
+                        <td class="py-2 px-4 border-b">USMAN ALI</td>
+                        <td class="py-2 px-4 border-b">January</td>
+                        <td class="py-2 px-4 border-b">3000</td>
+                        <td class="py-2 px-4 border-b">200</td>
+                        <td class="py-2 px-4 border-b">$3200</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">002</td>
+                        <td class="py-2 px-4 border-b">ALI AHMED</td>
+                        <td class="py-2 px-4 border-b">January</td>
+                        <td class="py-2 px-4 border-b">3500</td>
+                        <td class="py-2 px-4 border-b">300</td>
+                        <td class="py-2 px-4 border-b">3800</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">003</td>
+                        <td class="py-2 px-4 border-b">HASSAN ALI</td>
+                        <td class="py-2 px-4 border-b">February</td>
+                        <td class="py-2 px-4 border-b">2800</td>
+                        <td class="py-2 px-4 border-b">150</td>
+                        <td class="py-2 px-4 border-b">2950</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">004</td>
+                        <td class="py-2 px-4 border-b">HADI</td>
+                        <td class="py-2 px-4 border-b">February</td>
+                        <td class="py-2 px-4 border-b">4000</td>
+                        <td class="py-2 px-4 border-b">400</td>
+                        <td class="py-2 px-4 border-b">4400</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4 mt-10">
+        <p>&copy; 2023 Employee Management System | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
