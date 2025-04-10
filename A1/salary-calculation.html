@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Payroll Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="employee-list.html">Employee List</a></li>
+                <li><a href="salary-calculation.html">Salary Calculation</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Salary Calculation</h2>
+        <form action="salary-calculation.html" method="GET">
+            <label for="empName">Employee Name:</label>
+            <input type="text" id="empName" placeholder="Enter employee name" required><br><br>
+            <label for="salary">Base Salary:</label>
+            <input type="number" id="salary" placeholder="Enter base salary" required><br><br>
+            
+            <label for="bonus">Bonus (%):</label>
+            <input type="number" id="bonus" placeholder="Enter bonus percentage" required><br><br>
+            
+            <label for="deductions">Deductions ():</label>
+            <input type="number" id="deductions" placeholder="Enter deductions" required><br><br>
+            
+            <button type="submit">Calculate Salary</button>
+        </form>
+
+        <h3>Calculated Salary (Sample)</h3>
+        <p>Base Salary:5000</p>
+        <p>Bonus: 10%</p>
+        <p>Deductions: 500</p>
+        <p><strong>Net Salary:4500</strong></p>
+    </div>
+</body>
+</html>

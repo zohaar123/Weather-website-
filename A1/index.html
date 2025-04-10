@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Payroll Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="employee-list.html">Employee List</a></li>
+                <li><a href="salary-calculation.html">Salary Calculation</a></li>
+                <li><a href="payroll-history.html">Payroll History</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    
+    <div class="container">
+        <h2>Employee Registration</h2>
+        <form action="employee-list.html" method="GET">
+            <label for="empName">Name:</label>
+            <input type="text" id="empName" placeholder="Enter name" required><br><br>
+            
+            <label for="empID">Employee ID:</label>
+            <input type="text" id="empID" placeholder="Enter employee ID" required><br><br>
+            
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" placeholder="Enter salary" required><br><br>
+            
+            <label for="dept">Department:</label>
+            <input type="text" id="dept" placeholder="Enter department" required><br><br>
+            
+            <button type="submit">Add Employee</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+

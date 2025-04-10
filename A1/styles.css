@@ -1,0 +1,222 @@
+/* Resetting some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 50px;
+    font-size: 16px;
+  }
+  
+  /* Global Styling */
+  h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #2C3E50;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin-top: 15px;
+}
+.navbar ul li {
+    display: inline;
+    margin: 0 25px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #3498db;
+    text-decoration: underline;
+  }
+  /* Page Section Styles */
+section {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2C3E50;
+    font-weight: bold;
+  }
+  
+  section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* About Section Styling */
+  .about p {
+    margin-bottom: 15px;
+  }
+  
+  .about ul {
+    margin-left: 20px;
+    color: #555;
+  }
+  
+  .about ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  /* Employee Table Styling */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #2C3E50;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #f1f1f1;
+  }
+  
+  tr:hover td {
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Form Inputs and Buttons */
+  input, select, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  input[type="submit"], button {
+    width: auto;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2C3E50;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Adding Box Shadows for Sections */
+section {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Background Image for Main Sections */
+header {
+  background-image: url('your-image-url.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    width: 90%;
+    padding: 20px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  input, select, textarea {
+    padding: 12px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+  
