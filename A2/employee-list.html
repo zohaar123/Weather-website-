@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee List</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+<header class="bg-blue-600 p-5 text-white text-center shadow-md">
+  <h1 class="text-4xl font-bold">Employee List</h1>
+  <nav class="mt-3">
+    <ul class="flex justify-center space-x-6">
+      <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="employee-list.html" class="hover:text-yellow-400">Employee List</a></li>
+      <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+      <li><a href="contact-us.html" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container mx-auto p-6">
+  <section class="text-center">
+    <h2 class="text-3xl font-semibold mb-4">Employee Information</h2>
+    <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+      <thead>
+        <tr class="bg-blue-600 text-white">
+            <th class="py-2 px-4">Employee ID</th>
+            <th class="py-2 px-4">Name</th>
+            <th class="py-2 px-4">Position</th>
+            <th class="py-2 px-4">Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-gray-100">
+            <td class="py-2 px-4">101</td>
+            <td class="py-2 px-4">John Doe</td>
+            <td class="py-2 px-4">Manager</td>
+            <td class="py-2 px-4">5000</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="py-2 px-4">102</td>
+            <td class="py-2 px-4">Jane Smith</td>
+            <td class="py-2 px-4">Developer</td>
+            <td class="py-2 px-4">4000</td>
+          </tr>
+          <!-- More rows can go here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="bg-blue-600 p-3 text-white text-center">
+    <p>&copy; 2025 SkyWays Airlines. All rights reserved.</p>
+  </footer>
+</body>
+</html>
